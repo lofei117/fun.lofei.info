@@ -1,0 +1,48 @@
+
+@import "http://a.tbcdn.cn/s/kissy/1.2.0/cssreset/reset-min.css";
+
+body {
+	/*font-family: "Courier New"
+	font-size: 14px;*/
+/**
+	background:#FFF url(../logo.jpg) no-repeat;
+	background-position: right bottom;
+**/
+}
+
+
+#wrapper {
+	width: 740px;
+	margin: 0 auto;
+	line-height: 20px;
+	padding-bottom: 20px;
+}
+h1 {
+	font-size: 60px;
+	line-height: 60px;
+	padding: 40px 0;
+}
+#page {
+	text-align: center;
+	padding-top: 40px;
+}
+#page span {
+	display: inline-block;
+	color: #fff;
+	background: #090;
+	padding: 4px 12px;
+}
+#page em{
+	display:block;
+	text-align:center;
+	margin-top:10px;
+	font-style:normal;
+}
+#desc {
+	padding-bottom: 60px;
+}
+#desc strong {
+	font-size: 120%;
+	padding: 0 4px;
+	color: #f00;
+}

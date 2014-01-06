@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="user-scalable=0" />
+		<title>
+			12ball-game
+		</title>
+		<link rel="stylesheet" href="css/pub.css" />
+		<link rel="stylesheet" href="css/c.css" />
+		<link rel="stylesheet" href="css/buttons.css" />
+		<script type="text/javascript" src="js/jquery.js">
+		</script>
+		<script type="text/javascript" src="js/cls_ball.js">
+		</script>
+		<script type="text/javascript" src="js/cls_libra.js">
+		</script>
+		<script type="text/javascript" src="js/c.js">
+		</script>
+	</head>
+	<body>		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var date = new Date();
+				$("#nowdate").html(date.getFullYear());
+			});
+		</script>
+		<div id="wrapper">
+			<h1>
+				Find the special ball
+			</h1>
+			<div id="desc">
+				There are 12 balls below, including a special one, it is heavier or lighter, but we don't know.
+				<br />
+				Use the balance to find it out, and indicate whether it is heavier or lighter.
+				<br />
+				You can use the balance for only
+				<strong>
+					3
+				</strong>
+				times.
+			</div>
+			<div id="balls">
+				<ul>
+				</ul>
+			</div>
+			<div id="libra">
+				<div class="platform platform-left">
+					<div class="platform-region">
+					</div>
+				</div>
+				<div class="platform platform-right">
+					<div class="platform-region">
+					</div>
+				</div>
+				<div class="blance">
+				</div>
+			</div>
+			<div id="operation">
+				<button id="do-weight" class="button white">
+					Weigh it.
+				</button>
+			</div>
+			<div id="operation-record">
+				<h3>
+					Log：
+				</h3>
+				<ul>
+				</ul>
+			</div>
+			<div id="result">
+				<h3>
+					Conclusion：
+				</h3>
+				<p>					
+					The ball of No. 
+					<select id="ball-idx">
+					</select>
+					&nbsp;is&nbsp;
+					<input type="radio" id="ball-w-l-0" name="ball-w-l" value="0" />
+					<label for="ball-w-l-0">
+						Lighter
+					</label>
+					<input type="radio" id="ball-w-l-1" name="ball-w-l" value="1" />
+					<label for="ball-w-l-1">
+						Heavier
+					</label>
+					.
+				</p>
+				<p class="btn">
+					<button id="btn-submit" class="button white">
+						Submit
+					</button>
+				</p>
+			</div>
+		</div>
+		<div id="page">
+			Copyright &copy; 2013 -
+			<label id="nowdate">
+			</label>
+			<a href="http://fun.lofei.info">
+				fun.lofei.info
+			</a>
+			Designed from TaobaoUED Quiz
+		</div>
+	</body>
+</html>
