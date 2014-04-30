@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style type="text/css">
+      @font-face {
+        font-family: ChristmasEve;
+        src: url('fonts/christmaseve.ttf') format("truetype");
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>五一快乐！</title>
+    <script src="javascripts/jquery-1.10.1.min.js"></script>
+    <script src="javascripts/jquery.snow.js"></script>
+   
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1 class="christmas">五一，跟多听一起嗨起来</h1>
+        
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+         <img src="images/duotin.jpg" alt="duotin">
+        </section>
+      </div>
+    </div>
+    <script>
+      $(document).ready( function(){
+     // $.fn.snow( { minSize: 10, maxSize: 100, newOn: 500, flakeColor: '#FFFFFF' } );
+     //$('body').css("background-color","#F7F6F2");
+      var date = new Date();
+      $("#nowdate").html(date.getFullYear());
+      });
+    </script>  
+    <footer id="footer" class="inner">
+                Copyright &copy; 2013 - <label id="nowdate"></label> <a href="http://fun.lofei.info/">fun.lofei.info</a>
+               
+    </footer>
+  </body>
+</html>
